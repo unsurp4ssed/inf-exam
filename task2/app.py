@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 def f(x):
     b = ''
-    if all(i in digits for i in x):
+    if if x.isalnum():
         return sum(int(j) for j in x)
     else: 
         for j in x:
