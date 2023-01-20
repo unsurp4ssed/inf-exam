@@ -6,8 +6,7 @@ def f(x):
     s = 0
     b = ''
     if all(i in digits for i in x):
-        for j in x: s+=int(j)
-        return s
+        return sum(int(j) for j in x)
     else: 
         for j in x:
             if j not in digits: b += j
