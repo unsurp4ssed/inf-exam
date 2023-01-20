@@ -3,7 +3,6 @@ from string import digits
 app = Flask(__name__)
 
 def f(x):
-    s = 0
     b = ''
     if all(i in digits for i in x):
         return sum(int(j) for j in x)
